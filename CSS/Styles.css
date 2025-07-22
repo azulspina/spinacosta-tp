@@ -58,8 +58,8 @@ p {
 }
 
 .caja-uno {
-  width: 700px;
-  height: 200px;
+  min-width: 700px;
+  min-height: 200px;
   background-color: aqua;
   margin: 20px;
   padding: 20px;
