@@ -1,89 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/Styles.css" />
-    <header>
-      <a href="nosotros.html" target="_blank">Acerca de nosotros</a>
-      <a href="Viajes-futuros.html" target="_blank">Viajes futuros</a>
-      <a href="Viajes-pasados.html" target="_blank">Viajes pasados</a>
-      <a href="Bitacora.html" target="_blank">Bitacora en vivo</a>
-      <a href="../index.html" target="_blank">Inicio</a>
-    </header>
-    <title>Acerca de nosotros</title>
+    <title>Acerca de Nosotros | Juntos por el Mundo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header>
+      <nav>
+        <a href="nosotros.html">Acerca de nosotros</a>
+        <a href="viajes-futuros.html">Viajes futuros</a>
+        <a href="viajes-pasados.html">Viajes pasados</a>
+        <a href="bitacora.html">Bitácora en vivo</a>
+        <a href="../index.html">Inicio</a>
+      </nav>
       <h1>Acerca de nosotros</h1>
     </header>
     <main>
-      <section id="contenedor-items2">
-        <ul>
-          <div>
-            <li>Quiénes somos</li>
-          </div>
-          <div class="subt">
-            <h2>Sobre nosotros</h2>
-          </div>
-          <div>
-            <p class="nosotros">
-              Somnos Azul y Diogo, una pareja que ama viajar, descubrir lugares
-              nuevos y vivir experiencias distintas, cada uno a su manera.
-              Vivimos juntos, y nos encanta compartir no solo la vida diaria, si
-              no tambien el camino. Viajamos al Sur de Argentina, a mendoza, a
-              distintas zonas de Brasil y ahora estamos planeando Colombia y
-              Europa. Viajamos distinto, pero vamos al mismo ritmo. Y eso lo es
-              todo.
-            </p>
-          </div>
-          <div class="subt">
-            <h2>Azul</h2>
-          </div>
-          <div>
-            <p class="azu">
-              <img
-                src="../MULTIMEDIA/azu.PNG"
-                alt="fotografia"
-                class="imagen"
-              />
-              Azul es la organizadora oficial de cada viaje, la que se obsesiona
-              con los mapas, horarios, alijamientos y detalles. Si existe una
-              tabla compoarativa de precios, la hizo. Si hay alguna joya
-              escondida en el desatino, la encontro. Le apasiona el diseñoi
-              UX/UI, la escirtua, investigar y planificar todo con tiempo y
-              ganas.. Siempre esta aprendiendo algo nuevo y solñando en grande.
-              Como estudiante de Antropologia, su sueñpo es conocer todas las
-              culturas posibles y llegar a comprenderlas.
-            </p>
-          </div>
-          <div class="subt">
-            <h2>Diogo</h2>
-          </div>
-          <div>
-            <p class="diogo">
-              <img
-                src="../MULTIMEDIA/diogo.jpg"
-                alt="fotografia diogo"
-                class="imagen"
-              />
-              Diogo, por su parte, trabaja en una tienda de mascotas, y ama
-              viajar tanto como Azul, aunque no es del tipo que se pasa horas
-              buscando informnacio antes del viaje, si no mas bien del que pone
-              la plata indicada por la organizadora (siempre 50/50), su registor
-              de conducir y se deja llevar. Eso si, una vez que estan en el
-              camino, toma la posta. Se adapta rapido, improvisa, resuelve y
-              siempre esta listo para la aventura. Es mas accion que
-              planificacion u eso equilibra permfectamente la dinamcia. Su tipo
-              de viaje perfecto es en el cual pueda ver animales, cualquier tipo
-              de animal.
-            </p>
-          </div>
-        </ul>
+      <section class="nosotros-section">
+        <div class="about-imgs">
+          <img src="../multimedia/azu.png" alt="Azul" />
+          <img src="../multimedia/diogo.jpg" alt="Diogo" />
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">Quiénes somos</h2>
+          <p>
+            Somos Azul y Diogo, una pareja que ama viajar, descubrir lugares
+            nuevos y vivir experiencias distintas. Nos encanta compartir no solo
+            la vida diaria sino también el camino. Viajamos al sur de Argentina,
+            a Mendoza, a distintas zonas de Brasil y ahora estamos planeando
+            Colombia y Europa. Viajamos distinto, pero vamos al mismo ritmo. Y
+            eso lo es todo.
+          </p>
+          <h3>Azul</h3>
+          <p>
+            Organizadora oficial, obsesiva de mapas, horarios, alojamientos y
+            detalles. Si hay una tabla comparativa, la hizo. Apasionada del
+            diseño UX/UI, escritura e investigación. Estudiante de Antropología,
+            sueña con conocer todas las culturas posibles.
+          </p>
+          <h3>Diogo</h3>
+          <p>
+            Trabaja en una tienda de mascotas. Ama viajar, improvisar y
+            disfrutar del camino. No se obsesiona con la previa, pero es el
+            primero en adaptarse, resolver y lanzarse a la aventura. Su tipo de
+            viaje perfecto: aquel en el que pueda ver animales.
+          </p>
+        </div>
       </section>
     </main>
     <footer>
-      <a href="../index.html" target="_blank">volver</a>
+      <a href="../index.html" class="card-btn-secundario">Volver al inicio</a>
     </footer>
   </body>
 </html>
