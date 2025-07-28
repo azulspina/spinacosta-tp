@@ -8,11 +8,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav
+        class="d-flex flex-wrap justify-content-center align-items-center gap-2 py-2"
+      >
         <a href="page/nosotros.html">Acerca de nosotros</a>
         <a href="page/viajes-futuros.html">Viajes futuros</a>
         <a href="page/viajes-pasados.html">Viajes pasados</a>
@@ -24,67 +30,104 @@
       <h1>Juntos por el Mundo <span class="salta-viajero">🌍</span></h1>
     </header>
     <main>
-      <section class="nosotros-section">
-        <div class="about-imgs">
-          <img src="multimedia/foto.jpg" alt="Azul y Diogo viajando" />
-        </div>
-        <div class="about-text">
-          <h2 class="section-title">Relatos de Viaje y rutas compartidas</h2>
-          <p>
-            Somos Azul y Diogo, dos personas con un sueño: viajar por el mundo.
-            Recorrimos playas de Brasil, la cordillera mendocina y el sur helado
-            de Argentina, nuestro país. Hoy soñamos con recorrer Europa y
-            próximamente estaremos conociendo Colombia. Este blog surge como
-            diario de viajes y también como un rincón para compartir lo
-            aprendido, las risas, los errores y los lugares que nos robaron el
-            aliento. ¡Gracias por leernos!
-          </p>
+      <section class="nosotros-section container my-4">
+        <div class="row align-items-center g-3">
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0 about-imgs"
+          >
+            <img
+              src="multimedia/foto.jpg"
+              alt="Azul y Diogo viajando"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-8 about-text">
+            <h2 class="section-title">Relatos de Viaje y rutas compartidas</h2>
+            <p>
+              Somos Azul y Diogo, dos personas con un sueño: viajar por el
+              mundo. Recorrimos playas de Brasil, la cordillera mendocina y el
+              sur helado de Argentina, nuestro país. Hoy soñamos con recorrer
+              Europa y próximamente estaremos conociendo Colombia. Este blog
+              surge como diario de viajes y también como un rincón para
+              compartir lo aprendido, las risas, los errores y los lugares que
+              nos robaron el aliento. ¡Gracias por leernos!
+            </p>
+          </div>
         </div>
       </section>
       <section>
-        <h2 class="section-title">Destinos destacados</h2>
-        <div class="cards-list">
-          <div class="card brasil">
-            <div class="tag">Brasil</div>
-            <img src="multimedia/br2.jpg" alt="Ilha Grande, Brasil" />
-            <h3>Ilha Grande, Brasil</h3>
-            <div class="desc">
-              Un paraíso entre la selva y el mar. Ideal para quienes buscan
-              naturaleza y poca gente.
+        <h2 class="section-title text-center">Destinos destacados</h2>
+        <div class="container">
+          <div class="row justify-content-center cards-list g-4">
+            <div class="col-12 col-sm-6 col-md-4 d-flex">
+              <div class="card brasil flex-fill">
+                <div class="tag">Brasil</div>
+                <img
+                  src="multimedia/br2.jpg"
+                  alt="Ilha Grande, Brasil"
+                  class="img-fluid"
+                />
+                <h3>Ilha Grande, Brasil</h3>
+                <div class="desc">
+                  Un paraíso entre la selva y el mar. Ideal para quienes buscan
+                  naturaleza y poca gente.
+                </div>
+                <a
+                  href="relatos/relato-brasil.html"
+                  class="card-btn btn btn-primary"
+                  >Explorar destino</a
+                >
+              </div>
             </div>
-            <a href="relatos/relato-brasil.html" class="card-btn"
-              >Explorar destino</a
-            >
-          </div>
-          <div class="card colombia">
-            <div class="tag">Colombia</div>
-            <img src="multimedia/colombia.jpg" alt="Cartagena, Colombia" />
-            <h3>Cartagena, Colombia</h3>
-            <div class="desc">
-              Colores, cultura y Caribe. Pronto sumamos relatos y consejos para
-              viajar.
+            <div class="col-12 col-sm-6 col-md-4 d-flex">
+              <div class="card colombia flex-fill">
+                <div class="tag">Colombia</div>
+                <img
+                  src="multimedia/colombia.jpg"
+                  alt="Cartagena, Colombia"
+                  class="img-fluid"
+                />
+                <h3>Cartagena, Colombia</h3>
+                <div class="desc">
+                  Colores, cultura y Caribe. Pronto sumamos relatos y consejos
+                  para viajar.
+                </div>
+                <a
+                  href="futuro/ruta-colombia.html"
+                  class="card-btn btn btn-primary"
+                  >Explorar destino</a
+                >
+              </div>
             </div>
-            <a href="futuro/ruta-colombia.html" class="card-btn"
-              >Explorar destino</a
-            >
-          </div>
-          <div class="card europa">
-            <div class="tag">Europa</div>
-            <img src="multimedia/europa.jpg" alt="Europa" />
-            <h3>Europa soñada</h3>
-            <div class="desc">
-              Nuestra próxima gran aventura: recorrer Europa por 1 año y medio.
-              ¡Sumate al viaje!
+            <div class="col-12 col-sm-6 col-md-4 d-flex">
+              <div class="card europa flex-fill">
+                <div class="tag">Europa</div>
+                <img
+                  src="multimedia/europa.jpg"
+                  alt="Europa"
+                  class="img-fluid"
+                />
+                <h3>Europa soñada</h3>
+                <div class="desc">
+                  Nuestra próxima gran aventura: recorrer Europa por 1 año y
+                  medio. ¡Sumate al viaje!
+                </div>
+                <a
+                  href="futuro/ruta-europa.html"
+                  class="card-btn btn btn-primary"
+                  >Explorar destino</a
+                >
+              </div>
             </div>
-            <a href="futuro/ruta-europa.html" class="card-btn"
-              >Explorar destino</a
-            >
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <a href="index.html" class="card-btn-secundario">Inicio</a>
+      <a href="index.html" class="card-btn-secundario btn btn-success"
+        >Inicio</a
+      >
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
